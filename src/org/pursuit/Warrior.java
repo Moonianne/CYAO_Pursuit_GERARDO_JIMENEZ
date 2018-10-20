@@ -12,10 +12,11 @@ public class Warrior extends RaidTheStockades {
                 "\n" +
                 "Will you Salute your lieutenant, or scoff at his yelling?\n" +
                 "Choose: (SALUTE) or (SCOFF)");
-        if (playerChoice().equals("SALUTE")) {
+        String playerChoice = playerChoice().toUpperCase();
+        if (playerChoice.equals("SALUTE")) {
             System.out.println("You Salute your lieutenant!");
             salute(player);
-        } else if (playerChoice().equals("SCOFF")){
+        } else if (playerChoice.equals("SCOFF")){
             System.out.println("HONOR-LESS BOTTOM BARRACK FILTH!");
             scoff(player);
         }
@@ -33,6 +34,14 @@ public class Warrior extends RaidTheStockades {
         System.out.println("You scoff at your lieutenant! This warrior is no foot soldier! You will be reprimanded for this action and be taught the meaning of upholding honor!\n" +
                 "The grand marshal orders your arrest, you are dragged away to the stacks to be receive all forms of physical punishment. This is not how you thought you would spend\n" +
                 "yours days when you joined the royal army.");
+        System.out.println("\n " +
+                "Game over " + player.getName() + " Though you are welcome to try again.\n" +
+                "Yes or No Y/n??");
+        if (playerChoice().toUpperCase().equals("Y")){
+            startGame();
+        } else {
+            endGame();
+        }
 
     }
 }

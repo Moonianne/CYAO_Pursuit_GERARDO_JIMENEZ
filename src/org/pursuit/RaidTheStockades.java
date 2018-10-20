@@ -6,9 +6,6 @@ import java.util.Scanner;
 public class RaidTheStockades extends RolePlayingGame {
     Scanner input = new Scanner(System.in);
     Random randy = new Random();
-    private String charName;
-    private char gender;
-
     private Player player;
 
 
@@ -52,7 +49,7 @@ public class RaidTheStockades extends RolePlayingGame {
 
     @Override
     public void endGame() {
-
+        System.out.println("GAME OVER!");
     }
 
     public String createCharacter() {
@@ -60,15 +57,14 @@ public class RaidTheStockades extends RolePlayingGame {
         do {
             System.out.println("Male or Female?");
             player.setGender(input.nextLine().toUpperCase().charAt(0));
-            if (gender == 'M') {
-                player.setGender('M');
+            if (player.getGender() == 'M') {
                 System.out.println("POOF! You have been endowed with manly attributes and unreasonable sensitivities! A Male you are!");
-            } else if (gender == 'F') {
+            } else if (player.getGender() == 'F') {
                 System.out.println("Who says women can't be courageous adventurers! You are a strong independent woman who don't need no man!");
             } else {
                 System.out.println("In this fantasy world, our gender selection is binary, perhaps RaidTheStockades 2 shall implement this feature");
             }
-        } while (gender != 'M' && gender != 'F');
+        } while (player.getGender() != 'M' && player.getGender() != 'F');
 
 
         System.out.println("\n What class shall you be?\n" +
@@ -100,7 +96,7 @@ public class RaidTheStockades extends RolePlayingGame {
         }
         while (!playerClass.equals("WARRIOR") && !playerClass.equals("MAGE") && !playerClass.equals("HUNTER") && !playerClass.equals("ROGUE"));
 
-        System.out.println("Ah yes welcome " + (gender == 'M' ? "Mr. " : "Ms. ") + playerClass + " i am glad to see you aren't without class.\n" +
+        System.out.println("Ah yes welcome " + (player.getGender() == 'M' ? "Mr. " : "Ms. ") + playerClass + " i am glad to see you aren't without class.\n" +
                 "\n" +
                 "What shall we call you?\n" +
                 "Type your character name: ");
@@ -114,10 +110,6 @@ public class RaidTheStockades extends RolePlayingGame {
         player.setName(charName);
     }
 
-
-    public String getCharName() {
-        return charName;
-    }
 
     @Override
     String playerChoice() {
