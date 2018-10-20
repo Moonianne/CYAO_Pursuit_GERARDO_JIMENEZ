@@ -26,11 +26,11 @@ This is an example of a code block:
 
 Here's an image:
 
-![puppy image](https://puppyspot-photos-prod.s3.us-west-2.amazonaws.com/breeds/219/card/500000282_medium.jpg)
+![Edwin VC image](https://vignette.wikia.nocookie.net/wowwiki/images/3/37/Edwin_VanCleef_full.jpg/revision/latest?cb=20141010092532)
 
 Here's the clickable link to that image:
 
-[Click this link for the puppy image!](https://puppyspot-photos-prod.s3.us-west-2.amazonaws.com/breeds/219/card/500000282_medium.jpg)
+[Click this link for the Defias Captain image!](https://vignette.wikia.nocookie.net/wowwiki/images/3/37/Edwin_VanCleef_full.jpg/revision/latest?cb=20141010092532)
 
 And here's an indented text block:
 > "'Choose a Lazy Person To Do a Hard Job Because That Person Will Find an Easy Way To Do it'' - Bill Gates"
