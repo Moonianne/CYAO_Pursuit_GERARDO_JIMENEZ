@@ -33,4 +33,4 @@ Here's the clickable link to that image:
 [Click this link for the puppy image!](https://puppyspot-photos-prod.s3.us-west-2.amazonaws.com/breeds/219/card/500000282_medium.jpg)
 
 And here's an indented text block:
-> "'Choose a Lazy Person To Do a Hard Job Because That Person Will Find an Easy Way To Do I'' - Bill Gates"
+> "'Choose a Lazy Person To Do a Hard Job Because That Person Will Find an Easy Way To Do it'' - Bill Gates"
