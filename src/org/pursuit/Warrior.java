@@ -27,7 +27,15 @@ public class Warrior extends RaidTheStockades {
                 "it is important to stress this discipline of a warrior and his test his honor through battle. Now for the matter at hand. This is your Call to Arms! A riot within the \n" +
                 "Stockades his become quite the seen, the guards within are cornered and lost to us if we don't send in troops to help. \n " +
                 "Find your way to the stockades and prepare yourself and your company to raid them, take down the prison chiefs inside, and restore order." +
-                "");
+                "\n" +
+                "option 1: 'When do i move out captain?'\n" +
+                "option 2: 'I am not prepared to take on Such a task.'");
+    }
+
+    public void moveOut(Player player) {
+        System.out.println("Grand Marshall: " + (player.getGender() == 'M' ? "Mr. " : "Ms. ") + player.getName() + " You are a testament to the honor of our Kingdom. Meet with the Warden and \n" +
+                "prepare for combat, the Stockades are filled with the likes of criminal known for their savagery. The have no respect for life and would willing risk their own if it meant \n" +
+                "a change to breath the air of freedom once again.");
     }
 
     public void scoff(Player player) {
