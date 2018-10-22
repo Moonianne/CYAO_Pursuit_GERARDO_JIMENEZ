@@ -112,9 +112,9 @@ public class RaidTheStockades extends RolePlayingGame {
 
 
     @Override
-    String playerChoice() {
+    Boolean playerChoice(String option) {
         String usersChoice = input.nextLine();
-        return usersChoice;
+        return usersChoice.equals(option.toLowerCase());
     }
 
     @Override
