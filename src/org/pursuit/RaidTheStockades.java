@@ -18,6 +18,7 @@ public class RaidTheStockades extends RolePlayingGame {
         this.instructions();
         this.createCharacter();
         if (getPlayerClass().toUpperCase().equals("WARRIOR")) {
+            player.setWeapon("Sword and Shield!");
             Warrior warrior = new Warrior();
             warrior.intro(player);
         }
@@ -112,9 +113,8 @@ public class RaidTheStockades extends RolePlayingGame {
 
 
     @Override
-    Boolean playerChoice(String option) {
-        String usersChoice = input.nextLine();
-        return usersChoice.equals(option.toLowerCase());
+    Boolean playerChoice(String option, String choice) {
+        return option.equals(choice.toLowerCase());
     }
 
     @Override
@@ -125,5 +125,34 @@ public class RaidTheStockades extends RolePlayingGame {
     void nonPlayerRoll() {
     }
 
+    public void combat(Player player) {
+        System.out.println("As you walk down to an inmate comes at you with a shiv\n");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("1: Strike quickly    2: Tuck and roll");
+            int fightChoice = input.nextInt();
 
+            if (fightChoice == 1) {
+                System.out.println("You attack with: " + player.getWeapon());
+                if ((randy.nextInt(50) + 1) % 2 == 0) {
+                    System.out.println("You are skilled with your " + player.getWeapon() + " and have put this inmate down");
+                    break;
+                } else {
+                    System.out.println("This inmate won't be taken down by you easily, he prepares to strike you again");
+                    if (i == 9) {
+                        endGame();
+                    }
+                }
+            } else if (fightChoice == 2) {
+                if ((randy.nextInt(50) + 1) % 2 == 0) {
+                    System.out.println("You defended yourself! fleeing from this enemy and protecting your comrade");
+                    break;
+                } else {
+                    System.out.println("This inmate is clever and he predicts your dodge, be prepared strike. ");
+                    if (i == 9) {
+                        endGame();
+                    }
+                }
+            }
+        }
+    }
 }

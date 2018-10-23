@@ -7,7 +7,7 @@ public abstract class RolePlayingGame implements Game{
     public String playerWeapon;
 
 
-    abstract Boolean playerChoice(String option);
+    abstract Boolean playerChoice(String option, String choice);
 
     abstract void playerRoll();
 
