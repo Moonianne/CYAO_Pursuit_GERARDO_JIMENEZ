@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb08a7a0-2eca-46d0-912a-c92ec9cde9b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/RaidTheStockades.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/RaidTheStockades.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/RolePlayingGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/RolePlayingGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CYOA_Pursuit_HW_JIMENEZ_GERARDO/org/pursuit/Warrior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/pursuit/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pursuit/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/pursuit/RaidTheStockades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pursuit/RaidTheStockades.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/pursuit/RolePlayingGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pursuit/RolePlayingGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/pursuit/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pursuit/Warrior.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,12 +39,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="18100" />
+          <entry key="java" value="18749" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18100" />
+          <entry key="JAVA" value="18749" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -60,33 +55,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pursuit/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/pursuit/RaidTheStockades.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="128" column="8" lean-forward="true" selection-start-line="128" selection-start-column="8" selection-end-line="155" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2656#2657#0" expanded="true" />
-                <element signature="e#2704#2705#0" expanded="true" />
-                <element signature="e#6035#6036#0" expanded="true" />
-                <element signature="e#6093#6094#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/pursuit/RaidTheStockades.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1075">
+              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6363#6364#0" expanded="true" />
+                <element signature="e#6403#6404#0" expanded="true" />
+                <element signature="e#6476#6477#0" expanded="true" />
+                <element signature="e#6534#6535#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pursuit/Warrior.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="164" column="157" selection-start-line="164" selection-start-column="157" selection-end-line="164" selection-end-column="157" />
+            <state relative-caret-position="2655">
+              <caret line="177" column="33" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -94,8 +89,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pursuit/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+              <folding>
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +102,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pursuit/RolePlayingGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+              <folding>
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,9 +148,9 @@
         <option value="$PROJECT_DIR$/src/org/pursuit/User.java" />
         <option value="$PROJECT_DIR$/src/org/pursuit/Main.java" />
         <option value="$PROJECT_DIR$/src/org/pursuit/Player.java" />
+        <option value="$PROJECT_DIR$/src/org/pursuit/Warrior.java" />
         <option value="$PROJECT_DIR$/src/org/pursuit/RolePlayingGame.java" />
         <option value="$PROJECT_DIR$/src/org/pursuit/RaidTheStockades.java" />
-        <option value="$PROJECT_DIR$/src/org/pursuit/Warrior.java" />
       </list>
     </option>
   </component>
@@ -161,7 +164,21 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CYOA_Pursuit_HW_JIMENEZ_GERARDO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CYOA_Pursuit_HW_JIMENEZ_GERARDO" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540301525544" />
@@ -231,7 +248,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.669145" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8624535" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -291,27 +308,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pursuit/Character.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/pursuit/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pursuit/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pursuit/RolePlayingGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pursuit/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -319,24 +315,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pursuit/RaidTheStockades.java">
+    <entry file="file://$PROJECT_DIR$/src/org/pursuit/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="128" column="8" lean-forward="true" selection-start-line="128" selection-start-column="8" selection-end-line="155" selection-end-column="9" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pursuit/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2656#2657#0" expanded="true" />
-            <element signature="e#2704#2705#0" expanded="true" />
-            <element signature="e#6035#6036#0" expanded="true" />
-            <element signature="e#6093#6094#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pursuit/RolePlayingGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pursuit/Warrior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="164" column="157" selection-start-line="164" selection-start-column="157" selection-end-line="164" selection-end-column="157" />
+        <state relative-caret-position="2655">
+          <caret line="177" column="33" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pursuit/RaidTheStockades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1075">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="e#6403#6404#0" expanded="true" />
+            <element signature="e#6476#6477#0" expanded="true" />
+            <element signature="e#6534#6535#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

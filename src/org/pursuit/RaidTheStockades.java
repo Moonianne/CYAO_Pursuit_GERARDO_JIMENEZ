@@ -7,6 +7,7 @@ public class RaidTheStockades extends RolePlayingGame {
     Scanner input = new Scanner(System.in);
     Random randy = new Random();
     private Player player;
+    boolean isWin = false;
 
 
     @Override
@@ -16,12 +17,8 @@ public class RaidTheStockades extends RolePlayingGame {
 
         this.title();
         this.instructions();
-        this.createCharacter();
-        if (getPlayerClass().toUpperCase().equals("WARRIOR")) {
-            player.setWeapon("Sword and Shield!");
-            Warrior warrior = new Warrior();
-            warrior.intro(player);
-        }
+        this.runGame();
+
     }
 
     private void title() {
@@ -45,12 +42,27 @@ public class RaidTheStockades extends RolePlayingGame {
 
     @Override
     public void runGame() {
+        this.createCharacter();
+        if (getPlayerClass().toUpperCase().equals("WARRIOR")) {
+            player.setWeapon(getPlayerWeapon());
+            Warrior warrior = new Warrior();
+            warrior.intro(player);
+        }
 
     }
 
     @Override
     public void endGame() {
-        System.out.println("GAME OVER!");
+        if (isWin) {
+            System.out.println("THE HERO OF THE STOCKADES! RETURN WITH THE HEAD OF VAN CLEEF AND QUELL THE RIOT!\n\n" +
+                    "play again?\n\n" +
+                    "Yes/No Y/N?");
+            if (playerChoice("y", input.nextLine())) {
+                runGame();
+            }
+        } else {
+            System.out.println("GAME OVER!");
+        }
     }
 
     public String createCharacter() {
@@ -69,7 +81,7 @@ public class RaidTheStockades extends RolePlayingGame {
 
 
         System.out.println("\n What class shall you be?\n" +
-                "Choose: Warrior, Hunter, Mage, or Rogue");
+                "Choose: Warrior, Mage, or Rogue");
 
 
         do {
@@ -78,10 +90,6 @@ public class RaidTheStockades extends RolePlayingGame {
                 case "WARRIOR":
                     System.out.println("You are a Warrior! A Savage who is adept with the sword and shield. You shall fearlessly lead the charge and protect your party in battle.");
                     setPlayerWeapon("Sword & Shield");
-                    break;
-                case "HUNTER":
-                    System.out.println("You are a Hunter! A marksman like no other, your bow never misses it's target whilst you keep your distance and deal savage critical damage");
-                    setPlayerWeapon("Long Bow");
                     break;
                 case "MAGE":
                     System.out.println("You are a Mage! An intellectual who studies hard to master the mystic arts, you might be fragile but you hold nothing back to take down an enemy with your explosive attacks.");
