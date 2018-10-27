@@ -16,3 +16,5 @@ Here's the clickable link to that image:
 
 And here's an indented text block:
 > "'Choose a Lazy Person To Do a Hard Job Because That Person Will Find an Easy Way To Do it'' - Bill Gates"
+
+:)
