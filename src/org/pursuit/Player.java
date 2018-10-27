@@ -1,8 +1,5 @@
 package org.pursuit;
 
-
-import java.util.Scanner;
-
 public class Player {
 
     public static final String MALE = "male";
