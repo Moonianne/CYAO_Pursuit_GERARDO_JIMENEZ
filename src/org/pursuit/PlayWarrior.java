@@ -1,7 +1,7 @@
 package org.pursuit;
 
 
-public class Warrior extends NewCharacter {
+public class PlayWarrior extends PlayGame {
 
     String entry;
 
@@ -12,10 +12,11 @@ public class Warrior extends NewCharacter {
                 "'This is not an exercise! The city and the bystanders residing within its walls are facing a threat, It is time to\n" +
                 "deploy and put your training to the test.' You are scolded by your lieutenant. Now what kind of warrior are you " + player.getName() + "?\n" +
                 "\n" +
-                "Will you Salute your lieutenant, or scoff at his yelling?\n");
+                "Will you Salute your lieutenant, or scoff at his yelling?\n" +
+                " ");
         do {
-            System.out.println("Choose: (SALUTE) or (SCOFF)");
-            entry = input.nextLine();
+            System.out.println("Choose:  (SALUTE)        or           (SCOFF)");
+            entry = input.nextLine().toLowerCase();
         } while ((!entry.equals("salute")) && (!entry.equals("scoff")));
         saluteOrScoff(player);
     }
@@ -25,11 +26,12 @@ public class Warrior extends NewCharacter {
             System.out.println("You Salute your lieutenant!");
             System.out.println("Grand Marshall: You are quite the soldier " + player.getName() + " the lieutenant here speaks highly of you, don't take his tone to heart, /\n" +
                     "it is important to stress this discipline of a warrior and his test his honor through battle. Now for the matter at hand. This is your Call to Arms! A riot within the \n" +
-                    "Stockades his become quite the seen, the guards within are cornered and lost to us if we don't send in troops to help. \n " +
+                    "Stockades has become quite the seen, the guards within are cornered and lost to us if we don't send in troops to help. \n " +
                     "Find your way to the stockades and prepare yourself and your company to raid them, take down the prison chiefs inside, and restore order." +
                     "\n" +
                     "option 1: 'When do i move out captain?'\n" +
-                    "option 2: 'I am not prepared to take on Such a task.\n");
+                    "option 2: 'I am not prepared to take on Such a task.\n" +
+                    " ");
             while (!entry.equals("1") && !entry.equals("2") && !entry.equals("move out") && !entry.equals("not")) {
                 System.out.println("Choose 1('move out') or 2('not')");
                 entry = input.nextLine();
@@ -69,7 +71,7 @@ public class Warrior extends NewCharacter {
                         "                option 1: 'When do i move out captain?'\n" +
                         "                option 2: 'I am not prepared to take on Such a task.\n" +
                         "                Choose 1 or 2'");
-
+                this.entry = input.nextLine();
             }
         } while (playerChoice("1", entry) && playerChoice("move out", entry));
     }
@@ -79,9 +81,9 @@ public class Warrior extends NewCharacter {
         if (playerChoice("1", entry)) {
             System.out.println("Grand Marshall: 'Now thats the kind of gumption and grit we value around here!'\n" +
                     "You make your way to the Stockades, it is a grim and dreadful place. At first impressions it appears like a watch tower, but you immediately notice that the windows are boarded up\n" +
-                    "and that no light an enter or escape. Upon entering you notice a ramp barracaded off with soldier standing behind armed and at the ready; the ramp leads to the prison proper where the \n" +
+                    "and that no light can enter or escape. Upon entering you notice a ramp barricaded off with soldiers standing behind armed and at the ready; the ramp leads to the prison proper where the \n" +
                     "inmates are celled up. Not a sound escapes from down that ramp. \n" +
-                    "The warden approaches you." +
+                    "The warden approaches you.\n" +
                     "Warden:  'You must be " + player.getName() + " another greenhorn. Had I my way I would return you to the Grand Marshall, but I suppose we are at odds here. At least this one is a " + player.getUserClass() + "\n" +
                     "The other one that arrived is an amateur mage. I don't take kindly to spellbinders on a good day, and I have no appreciation for this one, that's why I'll be teaming you to up. Now be prepared\n" +
                     "what you will find down there is a dungeon full of gnolls, and rogues: imprisoned members of the defias brotherhood gang. You are to go in, walk through the halls and take down any savages, \n" +
@@ -101,8 +103,9 @@ public class Warrior extends NewCharacter {
             do {
                 entry = input.nextLine();
                 if (entry.equals("2")) {
-                    toStocksOrToWander(player);
                     entry = "1";
+                    toStocksOrToWander(player);
+                    break;
                 } else if (entry.equals("1")) {
                     drink(player);
                 }
@@ -132,9 +135,10 @@ public class Warrior extends NewCharacter {
             System.out.println("You have made it to the end of the hallway. You are motivated to find your way through to the mongrel who leads this riot. In front of you is a large cell, while \n" +
                     "to your left and right you see another set of hallways similar to the one you just crossed. While the hallways are littered with inmates looking for a fight, the room in front\n" +
                     "of you seems empty, just one man sits inside observing the long hallway you just came from. Perhaps he is in charge? Or can point you to who might be?\n" +
-                    "\n");
+                    "\n" +
+                    " ");
 
-            forkInThePrision(player);
+            forkInThePrison(player);
         } else if (playerChoice("2", entry)) {
             System.out.println("You looks around this floor of the Stockades, perhaps preparation is the best way to take on this challenge. You find a lance that you believe could help\n" +
                     "in defending yourself and mage comrade. What say you? \n" +
@@ -153,11 +157,12 @@ public class Warrior extends NewCharacter {
         }
     }
 
-    public void forkInThePrision(Player player) {
+    public void forkInThePrison(Player player) {
         entry = "";
         do {
-            System.out.println("1: Take a (Left)     2: Enter the large (Room)      3: Take a (Right)\n");
-            entry = input.nextLine();
+            System.out.println("1: Take a (Left)     2: Enter the large (Room)      3: Take a (Right)\n" +
+                    " ");
+            entry = input.next();
         } while (!entry.equals("1") && !entry.equals("2") && !entry.equals("3"));
         switch (entry) {
             case "1":
@@ -172,20 +177,23 @@ public class Warrior extends NewCharacter {
                         "and begin to question who he is where the riot leader is. At the moment he lunges at you, from atop the support structure of the cell dozens upon dozens of inmates attack you\n" +
                         "You see your receive countless shivs and you recgonize to late this was a trap. The door could only let one person in at a time. No you are outnumbered and you can't swing\n" +
                         "without dropping your guard. It's too late for that, this is where you fall, the last thing you see is a horde of inmates crowding, blood thirsty, stomping and stabbing away.\n" +
-                        "\n");
+                        "\n" +
+                        " ");
                 endGame();
                 break;
             case "3":
                 System.out.println("You take a right turn, you hold up your shield. Inmates brandish their weapons, some flex their fists enamored at the though of another victim. \n" +
                         "other inmates line the walls of this hallway, giving you a path to the end. It's time to fight your way through.\n" +
-                        "\n");
+                        "\n" +
+                        " ");
                 combat(player);
                 System.out.println("You did it! You survived this fight but it isn't over, you manage to take only a few steps when another inmate sees his opportunity to strike.");
                 combat(player);
                 System.out.println("\n" +
                         "Victorious! Though you are starting to feeling exhaustion. The inmates that remain in this hallway stand aside, impressed by your strength, the point you to the large \n" +
                         "holding area at the end of this hallway. You enter and are greeted by the sinister: Edwin Van Cleef, the defias brother leader, and of course, the man responsible for inciting\n" +
-                        "this riot. \n\n");
+                        "this riot. \n" +
+                        " ");
                 bossFight(player);
                 break;
         }
@@ -193,24 +201,28 @@ public class Warrior extends NewCharacter {
     }
 
     public void deadEnd(Player player) {
-        System.out.println("Entering the room you discover that the inmates are surrounding a large gnoll. It;s foaming at the mouth, inmates poke and tease the gnoll, angering it further. You have \n" +
+        entry = "";
+
+        System.out.println("Entering the room you discover that the inmates are surrounding a large gnoll. It's foaming at the mouth, inmates poke and tease the gnoll, angering it further. You have \n" +
                 "not fought a savage beast like this before but you are curious why the inmates intentionally anger it. If you approach you will have to take it down. Will you fight the gnoll or\n" +
-                "return to the previous fork in the prision?\n");
+                "return to the previous fork in the prison?\n" +
+                " ");
         do {
             System.out.println("1: Fight the gnoll      2: Return down the hallway");
-            entry = input.nextLine();
+            entry = input.next();
         } while (!entry.equals("1") && !entry.equals("2"));
-        if (!entry.equals("1")) {
-            System.out.println("You decide to fight the gnoll, upon your approach you see its inmate tag. 'Hogger'. ");
+        if (entry.equals("1")) {
+            System.out.println("You decide to fight the gnoll, upon your approach you see its inmate tag. 'Hogger'.... ");
             fightHogger(player);
         } else {
-            forkInThePrision(player);
+            forkInThePrison(player);
         }
     }
 
     private void fightHogger(Player player) {
         int hoggerSize = 0;
-        System.out.println("Hogger is not about to roll over. The gnoll extends its claws, be careful this one is savage, and enraged.\n");
+        System.out.println("Hogger is not about to roll over. The gnoll extends its claws, be careful this one is savage, and enraged.\n" +
+                " ");
         for (int i = 0; i < 15; i++) {
             System.out.println("1. Strike at Hogger      2. Dodge Hogger's claws");
             int fightChoice = input.nextInt();
@@ -268,19 +280,20 @@ public class Warrior extends NewCharacter {
             if (fightChoice == 1) {
                 System.out.println("You attack with: " + player.getWeapon());
                 if ((randy.nextInt(50) + 1) % 2 == 0) {
-                    System.out.println("You are skilled with your " + player.getWeapon() + " and have brought down Van Cleef, you carry his head to doors of the Stockades. This raid is over\n");
+                    System.out.println("You are skilled with your " + player.getWeapon() + " and have brought down Van Cleef, you carry his head to doors of the Stockades. This raid is over\n" +
+                            " ");
                     isWin = true;
-                    endGame();
                     break;
                 } else {
                     System.out.println("This inmate won't be taken down by you easily, this is Van Cleef! he prepares to strike you again, beware his Sinister Strike!");
                     if (randy.nextBoolean()) {
                         if (assist(player)) {
+                            isWin = true;
                             break;
                         }
                     }
                     if (i == 9) {
-                        endGame();
+                        break;
                     }
                 }
             } else if (fightChoice == 2) {
@@ -290,16 +303,16 @@ public class Warrior extends NewCharacter {
                     System.out.println("This is Edwin Vancleef!!!! He is clever and he predicts your dodge, at that moment he backstabs you! ");
                     if (randy.nextBoolean()) {
                         if (assist(player)) {
+                            isWin = true;
                             break;
                         }
                     }
                     if (i == 14) {
-                        endGame();
+                        break;
                     }
                 }
             }
         }
+        endGame();
     }
-
-
 }

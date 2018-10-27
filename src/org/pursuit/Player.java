@@ -2,9 +2,6 @@ package org.pursuit;
 
 public class Player {
 
-    public static final String MALE = "male";
-    public static final String FEMALE = "male";
-
     private String name;
     private char gender;
     private String userClass;
