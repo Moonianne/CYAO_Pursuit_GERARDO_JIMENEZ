@@ -72,6 +72,13 @@ public class PlayWarrior extends PlayGame {
                         "                option 2: 'I am not prepared to take on Such a task.\n" +
                         "                Choose 1 or 2'");
                 this.entry = input.nextLine();
+                if (entry.equals("1")) {
+                    toStocksOrToWander(player);
+                } else if (entry.equals("2")) {
+                    System.out.println("Maybe you need more training, come back when you feel the bravery of a warrior!");
+                    endGame();
+                }
+                break;
             }
         } while (playerChoice("1", entry) && playerChoice("move out", entry));
     }
@@ -260,12 +267,13 @@ public class PlayWarrior extends PlayGame {
                         if (i == 9) {
 
                             System.out.println("Hogger cannot be tranquilized, this beast over powers you and you fall. Defeated. You were ill prepared to take on a creature like Hogger.");
-                            endGame();
+                            break;
                         }
                     }
                 }
             }
         }
+        endGame();
     }
 
     public void bossFight(Player player) {

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb08a7a0-2eca-46d0-912a-c92ec9cde9b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/org/pursuit/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pursuit/PlayGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/pursuit/PlayWarrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pursuit/PlayWarrior.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,12 +37,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="23698" />
+          <entry key="java" value="23864" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="23698" />
+          <entry key="JAVA" value="23864" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pursuit/PlayGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="65">
               <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/pursuit/PlayWarrior.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="241" column="90" selection-start-line="241" selection-start-column="90" selection-end-line="241" selection-end-column="90" />
+            <state relative-caret-position="36">
+              <caret line="197" column="31" lean-forward="true" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -148,12 +148,12 @@
         <option value="$PROJECT_DIR$/src/org/pursuit/NewCharacter.java" />
         <option value="$PROJECT_DIR$/src/org/pursuit/Warrior.java" />
         <option value="$PROJECT_DIR$/src/org/pursuit/RaidStockades.java" />
-        <option value="$PROJECT_DIR$/src/org/pursuit/PlayWarrior.java" />
         <option value="$PROJECT_DIR$/src/org/pursuit/PlayGame.java" />
+        <option value="$PROJECT_DIR$/src/org/pursuit/PlayWarrior.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -245,7 +245,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25679544" />
@@ -340,16 +340,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pursuit/PlayWarrior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="241" column="90" selection-start-line="241" selection-start-column="90" selection-end-line="241" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pursuit/PlayGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="65">
           <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -358,6 +351,13 @@
             <element signature="e#4948#4949#0" expanded="true" />
             <element signature="e#5006#5007#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pursuit/PlayWarrior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="197" column="31" lean-forward="true" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
         </state>
       </provider>
     </entry>
