@@ -3,7 +3,7 @@ package org.pursuit;
 import java.util.Random;
 import java.util.Scanner;
 
-public class PlayGame {
+public class PlayGame implements Game{
     public static Scanner input = new Scanner(System.in);
     Random randy = new Random();
     private Player player;
