@@ -33,7 +33,7 @@ public class PlayWarrior extends PlayGame {
                     "option 2: 'I am not prepared to take on Such a task.\n" +
                     " ");
             while (!entry.equals("1") && !entry.equals("2") && !entry.equals("move out") && !entry.equals("not")) {
-                System.out.println("Choose 1('move out') or 2('not')");
+                System.out.println("Choose        1: ('move out')       or        2:  ('not')");
                 entry = input.nextLine();
             }
 
@@ -61,7 +61,7 @@ public class PlayWarrior extends PlayGame {
                         "Option 2: Wander around the trade district");
 
                 do {
-                    System.out.println("Choose option (1) or (2)");
+                    System.out.println("Choose option (1)    or    (2)");
                     this.entry = input.nextLine();
                 } while (!entry.equals("1") && !entry.equals("2"));
                 toStocksOrToWander(player);
@@ -84,10 +84,10 @@ public class PlayWarrior extends PlayGame {
                     "and that no light can enter or escape. Upon entering you notice a ramp barricaded off with soldiers standing behind armed and at the ready; the ramp leads to the prison proper where the \n" +
                     "inmates are celled up. Not a sound escapes from down that ramp. \n" +
                     "The warden approaches you.\n" +
-                    "Warden:  'You must be " + player.getName() + " another greenhorn. Had I my way I would return you to the Grand Marshall, but I suppose we are at odds here. At least this one is a " + player.getUserClass() + "\n" +
-                    "The other one that arrived is an amateur mage. I don't take kindly to spellbinders on a good day, and I have no appreciation for this one, that's why I'll be teaming you to up. Now be prepared\n" +
-                    "what you will find down there is a dungeon full of gnolls, and rogues: imprisoned members of the defias brotherhood gang. You are to go in, walk through the halls and take down any savages, \n" +
-                    "put down there leaders and quench this riot.'\n\n" +
+                    "Warden:  'You must be " + player.getName() + " another greenhorn. Had I my way I would return you to the Grand Marshall, but I suppose we are at odds here. At least this one is a \n" +
+                    "" + player.getUserClass() + "The other one that arrived is an amateur mage. I don't take kindly to spellbinders on a good day, and I have no appreciation for this one, that's why \n" +
+                    "I'll be teaming you to up. Now be prepared  what you will find down there is a dungeon full of gnolls, and rogues: imprisoned members of the defias brotherhood gang. You are to go \n" +
+                    "in, walk through the halls and take down any savages, put down there leaders and quench this riot.'\n" +
                     "You raise your  " + player.getWeapon() + " eager to to taste combat. When you are ready you may charge into the dungeon\n" +
                     "1: (Charge)   2: (Wait)");
             do {
